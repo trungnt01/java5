@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+	"-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="web.user" template="/views/layout/layout.jsp">
+		<put-attribute name="header" value="/views/layout/_header.jsp"/>
+		<put-attribute name="contents" value=""/>
+		<put-attribute name="footers" value="/views/layout/_footer.jsp"/>
+	</definition>
+	<definition name="*/*/*" extends="web.user">
+		<put-attribute name="contents" value="/views/{1}/{2}/{3}.jsp"/>
+	</definition>
+</tiles-definitions>
