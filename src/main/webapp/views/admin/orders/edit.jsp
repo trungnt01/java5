@@ -134,7 +134,7 @@
 			
 				
 				<div class="">
-					<form:form action="${ pageContext.request.contextPath }/admin/orders/edit/${ order.id }" modelAttribute="orderModel" method="post">	
+					<form:form action="${ pageContext.request.contextPath }/admin/orders/update/${ orderModel.id }" modelAttribute="orderModel" method="post">	
 						<div>
 							<h2>Thông tin khách hàng</h2>	  
 						</div>

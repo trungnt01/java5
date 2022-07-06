@@ -62,16 +62,7 @@
 						    	</c:forEach>
 						    </div>
 					    	
-					    	<div class="row m-0">
-								<ul class="pagination">
-									<c:forEach var="index" begin="0" end="${ pageData.totalPages - 1 }">
-										<li class="page-item">
-											<a class="page-link"
-												href="${ pageContext.request.contextPath }/home?page=${ index }">${ index + 1 }</a>
-										</li>
-									</c:forEach>
-								</ul>
-							</div>
+					    	
 					    </div>
 					    
 	                </div>
