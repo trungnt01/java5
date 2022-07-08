@@ -13,7 +13,7 @@ import com.poly.constant.SessionAtrr;
 import com.poly.entities.Account;
 
 @Component
-public class AdminInterceptor implements HandlerInterceptor {
+public class Authorization implements HandlerInterceptor {
 
 	@Override
 	public boolean preHandle(

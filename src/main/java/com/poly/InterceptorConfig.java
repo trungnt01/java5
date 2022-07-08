@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
-import com.poly.interceptors.AdminInterceptor;
+import com.poly.interceptors.Authorization;
 import com.poly.interceptors.Authenticate;
 
 @Configuration
@@ -15,7 +15,7 @@ public class InterceptorConfig implements WebMvcConfigurer {
 	private Authenticate authenticate;
 	
 	@Autowired
-	private AdminInterceptor admin;
+	private Authorization admin;
 	
 	@Override
 	public void addInterceptors (InterceptorRegistry registry) {
